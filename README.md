@@ -6,8 +6,6 @@ This Kotlin project is a basic calculator that allows for addition, subtraction,
 
 My purpose in writing this program was to deepen my knowledge of variables, conditionals, functions, classes, loops, and data classes, all within the Kotlin language.
 
-[Software Demo Video](http://youtube.link.goes.here)
-
 # Development Environment
 
 This program uses IntelliJ IDEA as the development environment.
