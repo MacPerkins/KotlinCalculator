@@ -53,6 +53,7 @@ fun getUserInput(): Pair<Double, Double> {
 }
 
 fun main() {
+    val calc = Calculator()
     var openApp = true
 
     println("Welcome to the Basic Calculator!")
@@ -71,30 +72,33 @@ fun main() {
         when (readln()) {
             "1" -> {
                 println("Addition")
-//                val (a, b) = getUserInput()
-//                println("Result: ${calc.add(a, b)}")
+                val (a, b) = getUserInput()
+                println("Result: ${calc.add(a, b)}")
             }
             "2" -> {
                 println("Subtraction")
-//                val (a, b) = getUserInput()
-//                println("Result: ${calc.subtract(a, b)}")
+                val (a, b) = getUserInput()
+                println("Result: ${calc.subtract(a, b)}")
             }
             "3" -> {
                 println("Multiplication")
-//                val (a, b) = getUserInput()
-//                println("Result: ${calc.multiply(a, b)}")
+                val (a, b) = getUserInput()
+                println("Result: ${calc.multiply(a, b)}")
             }
             "4" -> {
                 println("Division")
-//                val (a, b) = getUserInput()
-//                val result = calc.divide(a, b)
-//                if (result.isNaN()) {
-//                    println("Error: Division by zero")
-//                } else {
-//                    println("Result: $result")
-//                }
+                val (a, b) = getUserInput()
+                val result = calc.divide(a, b)
+                if (result.isNaN()) {
+                    println("Error: Division by zero")
+                } else {
+                    println("Result: $result")
+                }
             }
-            "5" -> println("History") //calc.printHistory()
+            "5" ->  {
+                println("History: ")
+                calc.printHistory()
+            }
             "6" -> {
                 println("\nExiting Program.")
                 openApp = false
